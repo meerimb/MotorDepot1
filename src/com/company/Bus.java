@@ -6,6 +6,15 @@ public class Bus {
     private String driver;
     private String state;
 
+    public static Bus autoBase(int id,String name,String driver,String state){
+        Bus bus=new Bus();
+        bus.id=id;
+        bus.name=name;
+        bus.driver=driver;
+        bus.state=state;
+        return bus;
+    }
+
     public int getId() {
         return id;
     }
@@ -37,12 +46,5 @@ public class Bus {
     public void setState(String state) {
         this.state = state;
     }
-    public static Bus autoBase(int id,String name,String driver,String state){
-        Bus bus=new Bus();
-        bus.id=id;
-        bus.name=name;
-        bus.driver=driver;
-        bus.state=state;
-        return bus;
-    }
+
 }
